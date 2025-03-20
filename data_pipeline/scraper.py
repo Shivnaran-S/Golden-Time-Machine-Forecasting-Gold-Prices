@@ -21,7 +21,7 @@ class WebDriverManager:
     def __init__(self):
         self.chrome_options = Options()
         self._configure_chrome_options()
-        self.service = Service("C:/Users/DELL/chromedriver-win64/chromedriver.exe") # "/usr/bin/chromedriver" for linux Streamlit Cloud Deployment
+        self.service = Service("/usr/bin/chromedriver") # "/usr/bin/chromedriver" for linux Streamlit Cloud Deployment # "C:/Users/DELL/chromedriver-win64/chromedriver.exe" in Windows local
 
     def _configure_chrome_options(self):
         """Configure Chrome options for headless browsing"""
@@ -29,7 +29,7 @@ class WebDriverManager:
         self.chrome_options.add_argument("--disable-dev-shm-usage")
         self.chrome_options.add_argument("--no-sandbox")
         self.chrome_options.add_argument("--disable-gpu") # not needed during Streamlit Cloud Deployment
-        self.chrome_options.binary_location = "C:/Program Files/Google/Chrome/Application/chrome.exe" # "/usr/bin/chromium" for linux Streamlit Cloud Deployment
+        self.chrome_options.binary_location = "/usr/bin/chromium" # "/usr/bin/chromium" for linux Streamlit Cloud Deployment # "C:/Program Files/Google/Chrome/Application/chrome.exe" for Windows local
 
     def get_driver(self):
         """Returns a new WebDriver instance"""
