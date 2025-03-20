@@ -1,4 +1,4 @@
-CITIES = ["Coimbatore", "Chennai"]
+CITIES = ["Coimbatore"]
 DB_PATH = "database/gold_prices.db"
 #MODEL_PATHS = {
 #    'arima': 'models/arima_model.pkl',
