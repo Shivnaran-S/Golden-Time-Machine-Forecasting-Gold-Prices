@@ -4,15 +4,15 @@
 
 ## Overview
 
-The **Golden Time Machine** is a sophisticated tool designed to predict future gold prices using historical and real-time data. Leveraging advanced machine learning models such as ARIMA, LSTM, and Prophet, this project provides actionable insights to help users make informed decisions about when to buy gold. The system is deployed on **Streamlit Cloud**, offering a seamless user experience.
+The **Golden Time Machine** is a sophisticated tool designed to predict future gold prices using historical and real-time data. Leveraging machine learning models such as ARIMA, LSTM, and Prophet, this project provides actionable insights to help users make informed decisions about when to buy gold. The system is deployed on **Streamlit Cloud**, offering a seamless user experience.
 
 ## Key Features
 
-- **Real-Time Data Extraction**: Utilizes **Selenium** and **BeautifulSoup** to scrape real-time gold prices for selected Indian cities.
-- **Data Storage**: Stores the extracted data in an **SQLite** database for efficient retrieval and processing.
+- **Real-Time Data Extraction**: Utilizes **Selenium** and **BeautifulSoup** to scrape real-time gold prices for the selected city.
+- **Data Storage**: Updates the extracted data in an **SQLite** database which is already populated with past data for efficient retrieval and processing.
 - **Advanced Predictive Models**: Employs **ARIMA**, **LSTM**, and **Prophet** models to forecast future gold prices.
 - **User-Friendly Interface**: Built with **Streamlit**, allowing users to interact with the system effortlessly.
-- **Optimal Purchase Recommendation**: Analyzes the data to recommend the best day to buy gold, minimizing potential losses.
+- **Optimal Purchase Recommendation**: Analyzes the data to recommend the day to buy gold, minimizing potential losses.
 
 ## How It Works
 
@@ -20,7 +20,7 @@ The **Golden Time Machine** is a sophisticated tool designed to predict future g
 2. **Data Extraction**: The system scrapes real-time gold prices for the selected city and updates the SQLite database.
 3. **Data Processing**: The stored data is retrieved, processed, and analyzed.
 4. **Model Prediction**: The ARIMA, LSTM, and Prophet models are applied to predict future gold prices.
-5. **Recommendation**: The system recommends the optimal day to purchase gold based on the analysis.
+5. **Recommendation**: The system recommends a day to purchase gold based on the analysis.
 
 ## Technologies Used
 
@@ -39,20 +39,15 @@ The **Golden Time Machine** is a sophisticated tool designed to predict future g
 ### Step 2: Confirm Selection
 - Click the **"Confirm Selection"** button to initiate data extraction and processing.
 
-### Step 3: Navigate Through Pages
-- **Predictor Page**: 
-  - Select a date range for which you want to predict gold prices.
-  - The system will analyze the data and recommend the best day to buy gold within the specified range.
-- **Analysis Page**:
-  - View detailed visualizations of historical gold prices.
-  - Explore model performance metrics for ARIMA, LSTM, and Prophet.
-  - Understand the data preprocessing steps and insights derived from the analysis.
+### Step 3: Perform EDA (Optional)
+- Click the **"Perform EDA"** button to visualize and analyze the gold prices data.
 
-### Step 4: View Results
-- The system will display:
-  - Forecasted gold prices for the selected date range.
-  - A recommendation for the optimal day to purchase gold.
-  - Visualizations of historical trends and model predictions.
+### Step 4: Model the data (Optional)  
+- Click the **"Model the data using ARIMA, LSTM and Prophet models"** button to explore model performance metrics for ARIMA, LSTM, and Prophet.
+
+### Step 4: Finding Purchase Date  
+- Select a date range for which you want to predict gold prices by choosing the start date and end date
+- Click the **"Find Optimal Purchase Date"** button to view the recommended day(s) to purchase gold and Forecasted Gold Prices for the selected date range.
 
 ## Results
 
