@@ -46,7 +46,7 @@ The **Golden Time Machine** is a sophisticated tool designed to predict future g
 - Click the **"Model the data using ARIMA, LSTM and Prophet models"** button to explore model performance metrics for ARIMA, LSTM, and Prophet.
 
 ### Step 4: Finding Purchase Date  
-- Select a date range for which you want to predict gold prices by choosing the start date and end date
+- Select a date range for which you want to predict gold prices by choosing the start date and end date.
 - Click the **"Find Optimal Purchase Date"** button to view the recommended day(s) to purchase gold and Forecasted Gold Prices for the selected date range.
 
 ## Results
